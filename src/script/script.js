@@ -93,8 +93,33 @@ document.getElementById('status-minecraft').addEventListener('click', () => {
       }
     }
 
+  async function fetchServerData() {
+    const serverip = document.getElementById('ip-minecraftServer')
+    const serverData = `https://api.mcsrvstat.us/3/${serverip.textContent}`;
+    try {
+      const response = await fetch(serverData);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const serverDataInfo = await response.json();
+      if (serverDataInfo !== undefined) {
+        document.getElementById('count-minecraftServerPlayers').textContent = serverDataInfo.players.online.toLocaleString();
+      } else {
+        document.getElementById('count-minecraftServerPlayers').textContent = "N/A";
+      }
+    } catch (error) {
+      document.getElementById('count-minecraftServerPlayers').textContent = "N/A";
+      console.error(error.message);
+    }
+  }
+
+
+
 setInterval(function() {
 fetchMemberCount();
+fetchServerData()
 }, 15000)
 
 fetchMemberCount();
+fetchServerData();
