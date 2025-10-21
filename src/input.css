@@ -378,7 +378,7 @@ a {
         border-bottom-right-radius: 10rem;
     }
 }
-@media (width > 48rem /* 768px */) {
+@media (width < 64rem /* 1024px */) {
     #navbars {
         transform: translateY(0);
         opacity: 1;
