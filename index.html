@@ -93,6 +93,7 @@
             }
         </script>
         <title>Terror Community</title>
+    </head>
     <body>
         <div
             id="beforeload"
@@ -160,15 +161,15 @@
         <nav
             class="naf bg-transparent select-none absolute top-0 left-0 w-full flex z-50 justify-center overflow-hidden">
             <button
-                class="absolute top-5 right-5 z-60 text-white/75 block lg:hidden"
+                class="absolute top-5 right-5 z-60 text-white/75 max-lg:block hidden"
                 onclick="toggleNav()">
                 <i id="faPlus" class="fa-solid fa-plus text-2xl"></i>
             </button>
             <div
                 id="navbars"
-                class="flex justify-center w-full bg-neutral-800/85 lg:bg-white/0 backdrop-blur-lg lg:backdrop-blur-none">
+                class="flex justify-center w-full max-lg:h-full max-lg:bg-neutral-800/85 max-lg:backdrop-blur-lg">
                 <ul
-                    class="flex justify-center items-center p-0  lg:flex-row flex-col h-[100dvh] lg:h-fit text-2xl lg:text-[1.1rem]">
+                    class="flex justify-center items-center p-0 max-lg:flex-col max-lg:h-[100dvh] max-lg:text-2xl">
                     <li class="nav-item">
                         <a id="home" class="nav-link" href="/">Home</a>
                     </li>
@@ -193,7 +194,7 @@
         <div class="h-fit flex flex-col items-center justify-center">
             <div class="container flex justify-center h-fit mt-15">
                 <div
-                    class="flex w-[95vw] flex-col justify-center items-center min-lg:justify-between min-lg:flex-row">
+                    class="flex w-[95vw] flex-col justify-center items-center lg:justify-between lg:flex-row">
                     <div id="server-info" class="h-fit lg:mt-0">
                         <a
                             class="link-gray header-status flex transition duration-200 hover:translate-x-4 active:translate-x-0"
@@ -227,7 +228,7 @@
                         loading="lazy"
                         src="assets/logo.webp"
                         alt="logo"
-                        class="w-[25rem] transition duration-200 -order-1 lg:order-none" />
+                        class="w-[25rem] transition duration-200 max-lg:-order-1" />
 
                     <div id="discord-server" class="h-fit mt-[1rem] lg:mt-0">
                         <a

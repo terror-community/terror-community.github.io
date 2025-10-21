@@ -370,11 +370,19 @@ a {
 #faPlus {
     transition: 0.5s ease-in-out;
 }
-@media screen and (max-width < 64rem /* 1024px */) {
+@media (width < 64rem /* 768px */) {
     #navbars {
         transform: translateY(-100%);
         opacity: 0;
         border-bottom-left-radius: 10rem;
         border-bottom-right-radius: 10rem;
+    }
+}
+@media (width > 64rem /* 768px */) {
+    #navbars {
+        transform: translateY(0);
+        opacity: 1;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
