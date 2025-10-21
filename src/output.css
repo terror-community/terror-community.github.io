@@ -1433,7 +1433,7 @@ a {
 #faPlus {
   transition: 0.5s ease-in-out;
 }
-@media (width < 48rem ) {
+@media (width < 68rem ) {
   #navbars {
     transform: translateY(-100%);
     opacity: 0;
@@ -1441,7 +1441,7 @@ a {
     border-bottom-right-radius: 10rem;
   }
 }
-@media (width < 64rem ) {
+@media (width >= 68rem ) {
   #navbars {
     transform: translateY(0);
     opacity: 1;
