@@ -156,17 +156,16 @@
                 >
             </div>
         </div>
-
+        <button
+            class="fixed top-5 right-5 z-60 text-white/75 max-lg:block hidden"
+            onclick="toggleNav()">
+            <i id="faPlus" class="fa-solid fa-plus text-2xl"></i>
+        </button>
         <!-- navbar -->
         <nav
+            id="navbars"
             class="naf bg-transparent select-none absolute top-0 left-0 w-full flex z-50 justify-center overflow-hidden">
-            <button
-                class="absolute top-5 right-5 z-60 text-white/75 max-lg:block hidden"
-                onclick="toggleNav()">
-                <i id="faPlus" class="fa-solid fa-plus text-2xl"></i>
-            </button>
             <div
-                id="navbars"
                 class="flex justify-center w-full max-lg:h-full max-lg:bg-neutral-800/85 max-lg:backdrop-blur-lg">
                 <ul
                     class="flex justify-center items-center p-0 max-lg:flex-col max-lg:h-[100dvh] max-lg:text-2xl">
