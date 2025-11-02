@@ -1,13 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 @import "tailwindcss";
+
+/* body {
+    background-image: url(../assets/background/background-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+} */
 
 @theme {
     --color-black-transparent: rgba(0, 0, 0, 0.271);
     --font-poppins: "Poppins", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+    --font-anton: "Anton", "sans-serif";
     --font-montserrat: "Montserrat", "sans-serif";
+    --font-jersey-25: "Jersey 25", "sans-serif";
 }
+
+body {
+    background-color: #0b090a;
+}
+
 /* nav */
 
 .nav-item > a {
@@ -49,14 +68,6 @@
 }
 .nav-item > a.nav-link.active {
     color: #ffffff;
-}
-
-body {
-    background-image: url(/assets//background.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 /*  */
@@ -412,5 +423,8 @@ a {
     color: rgb(180, 180, 180);
     background-color: rgba(180, 180, 180, 0.2);
 }
-
+.member {
+    color: rgb(180, 180, 180);
+    background-color: rgba(180, 180, 180, 0.2);
+}
 /* end Roles */
