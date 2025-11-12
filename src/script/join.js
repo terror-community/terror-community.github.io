@@ -6,6 +6,50 @@ if (localStorage.getItem("pendaftaran") !== null) {
 }
 
 
+  document.addEventListener('click', e => {
+    if(document.getElementById('supportModalDialog').classList.contains('shown')) {
+      if (!document.getElementById('supportModalDialog').classList.contains('hidden')) {
+        if (!document.getElementById('SupportModal').contains(e.target)){
+          setTimeout(function() {
+            document.getElementById('supportModalDialog').classList.add('hidden')
+            document.getElementById('supportModalDialog').classList.remove('shown')
+          }, 100);
+          document.getElementById('SupportModal').classList.add('translate-y-[7rem]')
+          document.getElementById('SupportModal').classList.remove('translate-y-[10rem]')
+          document.getElementById('supportModalDialog').classList.remove('bg-black/25')
+        }
+      }
+    }
+  });
+
+
+
+  document.getElementById('SupportmodalClose').addEventListener('click', () => {
+    if (!document.getElementById('supportModalDialog').classList.contains('hidden')) {
+      setTimeout(function() {
+        document.getElementById('supportModalDialog').classList.add('hidden')
+        document.getElementById('supportModalDialog').classList.remove('shown')
+      }, 100);
+      document.getElementById('SupportModal').classList.add('translate-y-[7rem]')
+      document.getElementById('SupportModal').classList.remove('translate-y-[10rem]')
+      document.getElementById('supportModalDialog').classList.remove('bg-black/25')
+    }
+  });
+  
+  document.getElementById('support').addEventListener('click', () => {
+    if (document.getElementById('supportModalDialog').classList.contains('hidden')) {
+      setTimeout(function() {
+        document.getElementById('SupportModal').classList.remove('translate-y-[7rem]')
+        document.getElementById('SupportModal').classList.add('translate-y-[10rem]')
+      }, 0);
+      document.getElementById('supportModalDialog').classList.remove('hidden')
+      setTimeout(function() {
+        document.getElementById('supportModalDialog').classList.add('shown')
+        document.getElementById('supportModalDialog').classList.add('bg-black/25')
+      }, 10);
+    }
+  });
+
 
 import navLoc from "./navbar.js";
 navLoc()
