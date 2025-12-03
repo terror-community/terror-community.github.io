@@ -1,7 +1,7 @@
 if (localStorage.getItem("pendaftaran") !== null) {
     if (localStorage.getItem("pendaftaran") == "true") {
         document.getElementById("#join").classList = "bg-[#a7c957] hover:bg-[#6a994e] px-8 py-3 rounded-full font-semibold transition-all text-white hover:shadow-[#6a994e] shadow-[#a7c957] shadow-[0_0_20px]"
-        document.getElementById("#join").innerHTML = /* html */`<i class="fa-solid fa-door-open"></i> Pendaftaran Dibuka`
+        document.getElementById("#join").innerHTML = /* html */`<i class="fa-solid fa-door-open text-xl"></i> Pendaftaran Dibuka`
     }
 }
 
@@ -75,6 +75,6 @@ localStorage.setItem("pendaftaran", pendaftaran.value)
 if (localStorage.getItem("pendaftaran") !== null) {
     if (localStorage.getItem("pendaftaran") == "true") {
         document.getElementById("#join").classList = "bg-[#a7c957] hover:bg-[#6a994e] px-8 py-3 rounded-full font-semibold transition-all text-white hover:shadow-[#6a994e] shadow-[#a7c957] shadow-[0_0_20px]"
-        document.getElementById("#join").innerHTML = /* html */`<i class="fa-solid fa-door-open"></i> Pendaftaran Dibuka`
+        document.getElementById("#join").innerHTML = /* html */`<i class="fa-solid fa-door-open text-xl"></i> Pendaftaran Dibuka`
     }
 }

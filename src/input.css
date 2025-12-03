@@ -428,3 +428,11 @@ a {
     background-color: rgba(180, 180, 180, 0.2);
 }
 /* end Roles */
+
+._vghj {
+    color: #7289da;
+    cursor: pointer;
+}
+._vghj:hover {
+    color: #4962bd;
+}
