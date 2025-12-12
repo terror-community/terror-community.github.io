@@ -436,3 +436,19 @@ a {
 ._vghj:hover {
     color: #4962bd;
 }
+#cards .terrorLegends {
+    background-image: url("../assets/lgTL.png");
+    background-position: -15px 60%;
+}
+#cards .terrorArc {
+    background-image: url("../assets/lgTA.png");
+    background-position: -15px 60%;
+}
+#cards .terrorHardcore {
+    background-image: url("../assets/lgTH.png");
+    background-position: -15px 60%;
+}
+#cards .terrorForsaken {
+    background-image: url("../assets/lgTF.png");
+    background-position: -15px 60%;
+}

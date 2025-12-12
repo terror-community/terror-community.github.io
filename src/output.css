@@ -298,9 +298,6 @@
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
@@ -372,9 +369,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .size-\[25dvw\] {
     width: 25dvw;
@@ -485,9 +479,6 @@
   .flex-none {
     flex: none;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-y-\[50\%\] {
     --tw-translate-y: calc(50% * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -541,9 +532,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -627,10 +615,6 @@
     border-top-right-radius: var(--radius-2xl);
     border-bottom-right-radius: var(--radius-2xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -644,9 +628,6 @@
   }
   .border-\[\#db5759\] {
     border-color: #db5759;
-  }
-  .border-white {
-    border-color: var(--color-white);
   }
   .border-white\/5 {
     border-color: color-mix(in srgb, #fff 5%, transparent);
@@ -677,9 +658,6 @@
   .bg-amber-950 {
     background-color: var(--color-amber-950);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-black\/20 {
     background-color: color-mix(in srgb, #000 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -706,9 +684,6 @@
   }
   .bg-neutral-300 {
     background-color: var(--color-neutral-300);
-  }
-  .bg-neutral-800 {
-    background-color: var(--color-neutral-800);
   }
   .bg-neutral-800\/85 {
     background-color: color-mix(in srgb, oklch(26.9% 0 0) 85%, transparent);
@@ -755,9 +730,6 @@
   }
   .bg-\[url\(\.\.\/assets\/background-2\.jpg\)\] {
     background-image: url(../assets/background-2.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/photo-2\.png\)\] {
-    background-image: url(../assets/photo-2.png);
   }
   .from-\[\#2b2d42\] {
     --tw-gradient-from: #2b2d42;
@@ -990,9 +962,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-\[\#400000\] {
     color: #400000;
   }
@@ -1089,9 +1058,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-\[0_0_20px\] {
     --tw-shadow: 0 0 20px var(--tw-shadow-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1112,10 +1078,6 @@
       }
     }
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .outline-3 {
     outline-style: var(--tw-outline-style);
     outline-width: 3px;
@@ -1128,9 +1090,6 @@
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-md));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -1138,10 +1097,6 @@
   }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -2085,6 +2040,22 @@ a {
 }
 ._vghj:hover {
   color: #4962bd;
+}
+#cards .terrorLegends {
+  background-image: url("../assets/lgTL.png");
+  background-position: -15px 60%;
+}
+#cards .terrorArc {
+  background-image: url("../assets/lgTA.png");
+  background-position: -15px 60%;
+}
+#cards .terrorHardcore {
+  background-image: url("../assets/lgTH.png");
+  background-position: -15px 60%;
+}
+#cards .terrorForsaken {
+  background-image: url("../assets/lgTF.png");
+  background-position: -15px 60%;
 }
 @property --tw-translate-x {
   syntax: "*";
